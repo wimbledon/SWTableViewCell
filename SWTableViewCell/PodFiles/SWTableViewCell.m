@@ -79,6 +79,7 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
     layoutUpdating = NO;
     // Set up scroll view that will host our cell content
     self.cellScrollView = [[SWCellScrollView alloc] init];
+    self.cellScrollView.decelerationRate = UIScrollViewDecelerationRateNormal;
     self.cellScrollView.translatesAutoresizingMaskIntoConstraints = NO;
     self.cellScrollView.delegate = self;
     self.cellScrollView.showsHorizontalScrollIndicator = NO;
